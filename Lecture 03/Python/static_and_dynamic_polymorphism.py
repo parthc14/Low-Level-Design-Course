@@ -50,7 +50,7 @@ class ManualCar(Car):
         print(f"{self._brand} {self._model} - Breaking to {self._current_speed} km/hr")
 
 class ElectricCar(Car):
-    def __init__(self, brand, model, is_engine_on = False, current_speed = 0, battery_level:int = 0):
+    def __init__(self, brand, model, is_engine_on = False, current_speed = 0, battery_level:int = 100):
         super().__init__(brand, model, is_engine_on, current_speed)
         self._battery_level = battery_level
     
