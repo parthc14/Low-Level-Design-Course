@@ -23,7 +23,7 @@ class NotificationObservable(IObservable):
         for observer in self.observers:
             observer.update()
     
-    def get_notification(self):
+    def get_notification_content(self):
         return self.get_current_notification().get_content()
     
     def set_notification(self, notification: INotification):
